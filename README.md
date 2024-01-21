@@ -32,5 +32,6 @@ To set up and run the backend locally, follow these steps:
    ```bash
    update-database
 4. Run the application via Visual Studio
+5. Swagger UI should be at the `/` endpoint for testing
 
   
