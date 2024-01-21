@@ -25,6 +25,14 @@ namespace youtube_notes_api.Controllers
             return Ok(_dataContext.Notes.ToList());
         }
 
+        [HttpGet]
+        [Route("healthcheck")]
+        public ActionResult<IEnumerable<Note>> Test()
+        {
+
+            return Ok("Health check OK");
+        }
+
         [HttpGet("{id}")]
         public ActionResult<Note> GetNoteById(int id)
         {

@@ -33,7 +33,15 @@ if (app.Environment.IsDevelopment())
     // When you do not have configuration for production endpoint in appsettings.json
     // By default the environment will be production and these code will not execute
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(x =>
+    {
+
+        x.SwaggerEndpoint("/swagger/v1/swagger.json", "Web API V1");
+        x.RoutePrefix = "swagger";
+
+    }
+);
+
 }
 
 app.UseHttpsRedirection();
