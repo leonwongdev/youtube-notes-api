@@ -17,7 +17,7 @@ The corresponding React CRUD web app is deployed on Netlify. You can access it h
 
 For the frontend code, please refer to the following repository:
 
-[Frontend Code Repository](https://github.com/leonwongdev/react-crud-videonote-app)
+[Frontend Code Repository](https://github.com/leonwongdev/youtube-notes-react)
 
 ## Getting Started
 
